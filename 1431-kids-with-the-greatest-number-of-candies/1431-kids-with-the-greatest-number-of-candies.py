@@ -1,14 +1,13 @@
 class Solution(object):
     def kidsWithCandies(self, candies, extraCandies):
-        new=[]
-        res=[]
-        m=max(candies)
-        for i in candies:
-            new.append(i+extraCandies)
-        for j in new:
-            if j>=m:
-                res.append(True)
+        new = [i+extraCandies for i in candies]
+        maximum=max(candies)
+        result=[]
+        for i in new:
+            if i>=maximum:
+                result.append(True)
             else:
-                res.append(False)
-        return res
-            
+                result.append(False)
+        return result
+        
+        
