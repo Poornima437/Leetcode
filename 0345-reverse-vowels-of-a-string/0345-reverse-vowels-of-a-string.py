@@ -1,13 +1,13 @@
 class Solution(object):
     def reverseVowels(self, s):
-        vowels="AaEeIiOoUu"
-        result=[]
-        s_list=[i for i in s if i in vowels]
-        for i in s:
-            if i in vowels:
-                result.append(s_list.pop())
-            else:
-                print(result.append(i))
-        return''.join(result)
-     
+        vowels = "aeiouAEIOU"
+        n = [ch for ch in s if ch in vowels]  # collect vowels
         
+        result = []
+        for ch in s:
+            if ch in vowels:
+                result.append(n.pop())  # pop last vowel
+            else:
+                result.append(ch)
+        
+        return "".join(result)
