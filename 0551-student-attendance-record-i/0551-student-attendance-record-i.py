@@ -4,8 +4,8 @@ class Solution(object):
         l = n.count("L")
         a = n.count("A")
         p = n.count("P")
-        for i in n:
-            if l>=3:
+        for i in s:
+            if "LLL" in s:
                 return False
             elif a>1:
                 return False
