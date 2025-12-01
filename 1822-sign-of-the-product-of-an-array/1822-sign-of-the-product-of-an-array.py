@@ -1,15 +1,10 @@
-class Solution:
-    def arraySign(self, nums: List[int]) -> int:
-        sign = 1
-        for num in nums:
-            if num == 0:
+class Solution(object):
+    def arraySign(self, nums):
+        product  = 1
+        for i in nums:
+            if i == 0:
                 return 0
-            if num < 0:
-                sign *= -1
-        return sign
-
-        
+            if i < 0:
+                product*=-1
+        return product
             
-            
-
-        
